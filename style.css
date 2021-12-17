@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.wraper{
+  display: flex;
+  background: #1D1C23;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  clear: both;
+  border-radius: 8px;
+}
+.range-wrap {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+}
+input,
+output {
+  display: inline-block;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+}
+
+output {
+  color: #FFB800;
+  font-weight: bolder;
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  left: 51%;
+  transform: translateX(-50%);
+}
+
+
+/* input[type="range"]:focus,
+input[type="number"]:focus {
+  box-shadow: 0 0 3px 1px #4b81dd;
+  outline: none;
+} */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  width: 200px;
+  height: 10px;
+  background: black;
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, #F2B411 0%, #FFB800 100%);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Input Thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #ff4500;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #141414 48.23%, #5A5A5A 100%);
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+  border: 1.36px solid #474852;
+
+}
+
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #ff4500;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+
+
+
+/* Input Track */
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type=range]::-moz-range-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+input[type="range"]::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.button{
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}

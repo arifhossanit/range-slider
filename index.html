@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wraper">
+        <div class="button">
+            <img src="l_arrow.svg" alt="" id="min" onclick="minus()">
+        </div>
+            
+        <div class="range-wrap">
+            <input type="range" name="" id="range" value="50" min="0" max="100">
+            <output id="rangevalue" class="bubble">50</output>
+        </div>
+        <div class="button">
+            <img src="r_arrow.svg" alt="" id="max" onclick="plus()">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
