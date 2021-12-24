@@ -31,6 +31,7 @@ body {
   position: relative;
   width: 200px;
 }
+
 input,
 output {
   display: inline-block;
@@ -47,13 +48,6 @@ output {
   left: 51%;
   transform: translateX(-50%);
 }
-
-
-/* input[type="range"]:focus,
-input[type="number"]:focus {
-  box-shadow: 0 0 3px 1px #4b81dd;
-  outline: none;
-} */
 
 input[type="range"] {
   -webkit-appearance: none;

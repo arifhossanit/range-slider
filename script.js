@@ -1,3 +1,4 @@
+// work with page refreshing/loading
 let countEl = document.getElementById("range");
 let countE2 = document.getElementById("range2");
 let rangevalue=document.getElementById("rangevalue");
@@ -11,8 +12,8 @@ rangevalue2.innerHTML=countE2.value;
 countE2.style.backgroundSize=`${countE2.value*10}%`;
 rangevalue2.style.left = `calc(${countE2.value*10}% + (${24 - (countE2.value*10) * 0.44}px))`;
 
+// work with input range-thumb mover
 const rangeInputs = document.querySelectorAll('input[type="range"]');
-let countE;
 let rangeval;
 
 function handleInputChange(e) {
@@ -43,6 +44,8 @@ rangeInputs.forEach(input => {
 })
 
 
+// work with button click
+let countE;
 
 function controler(cv,rid){
   if (rid == 'range') {
