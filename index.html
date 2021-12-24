@@ -8,20 +8,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wraper">
-        <div class="button">
-            <img src="l_arrow.svg" alt="" id="min" onclick="minus()">
+    <div class="top-container">
+        <div class="container">
+                <h2 class="heading">Map Opacity</h2>
+            <div class="wraper">
+                <div class="button">
+                    <img src="l_arrow.svg" alt="" id="min" onclick="controler(-2,'range')">
+                </div>
+                    
+                <div class="range-wrap">
+                    <input type="range" name="" id="range" value="50" min="0" max="100">
+                    <output id="rangevalue" class="bubble">50</output>
+                </div>
+                <div class="button">
+                    <img src="r_arrow.svg" alt="" id="max" onclick="controler(2,'range')">
+                </div>
+            </div>
         </div>
-            
-        <div class="range-wrap">
-            <input type="range" name="" id="range" value="50" min="0" max="100">
-            <output id="rangevalue" class="bubble">50</output>
-        </div>
-        <div class="button">
-            <img src="r_arrow.svg" alt="" id="max" onclick="plus()">
+        <div class="container">
+                <h2 class="heading">Zoom Map</h2>
+            <div class="wraper">
+                <div class="button">
+                    <img src="l_arrow.svg" alt="" id="min" onclick="controler(-1,'range2')">
+                </div>
+                    
+                <div class="range-wrap">
+                    <input type="range" name="" id="range2" value="5" min="0" max="10">
+                    <output id="rangevalue2" class="bubble">5</output>
+                </div>
+                <div class="button">
+                    <img src="r_arrow.svg" alt="" id="max" onclick="controler(1,'range2')">
+                </div>
+            </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
