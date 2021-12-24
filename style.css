@@ -4,6 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: black;
 }
 .top-container{
   background: #1D1C23;
