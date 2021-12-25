@@ -6,11 +6,11 @@ let rangevalue2=document.getElementById("rangevalue2");
 
 rangevalue.innerHTML=countEl.value;
 countEl.style.backgroundSize=`${countEl.value}%`;
-rangevalue.style.left = `calc(${countEl.value}% + (${24 - countEl.value * 0.44}px))`;
+rangevalue.style.left = `calc(${countEl.value}% + (${21.5 - countEl.value * 0.42}px))`;
 
 rangevalue2.innerHTML=countE2.value;
 countE2.style.backgroundSize=`${countE2.value*10}%`;
-rangevalue2.style.left = `calc(${countE2.value*10}% + (${24 - (countE2.value*10) * 0.44}px))`;
+rangevalue2.style.left = `calc(${countE2.value*10}% + (${21.5 - (countE2.value*10) * 0.42}px))`;
 
 // work with input range-thumb mover
 const rangeInputs = document.querySelectorAll('input[type="range"]');
@@ -33,9 +33,9 @@ function handleInputChange(e) {
   
   target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%';
   if (target.id == 'range2') {
-    rangeval.style.left = `calc(${val*10}% + (${24 - (val*10) * 0.44}px))`;
+    rangeval.style.left = `calc(${val*10}% + (${21.5 - (val*10) * 0.42}px))`;
   }else{
-    rangeval.style.left = `calc(${val}% + (${24 - val * 0.44}px))`;
+    rangeval.style.left = `calc(${val}% + (${21.5 - val * 0.42}px))`;
   }
 }
 
@@ -66,9 +66,9 @@ function controler(cv,rid){
 
     countE.style.backgroundSize = (vals - mins) * 100 / (maxs - mins) + '% 100%';
     if (rid == 'range2') {
-      rangeval.style.left = `calc(${vals*10}% + (${24 - (vals*10) * 0.44}px))`;
+      rangeval.style.left = `calc(${vals*10}% + (${21.5 - (vals*10) * 0.42}px))`;
     }else{
-      rangeval.style.left = `calc(${vals}% + (${24 - vals * 0.44}px))`;
+      rangeval.style.left = `calc(${vals}% + (${21.5 - vals * 0.42}px))`;
     }
     
     
