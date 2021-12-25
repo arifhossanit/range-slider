@@ -49,9 +49,11 @@ output {
   color: #FFB800;
   font-weight: bolder;
   position: absolute;
-  top: 1.8px;
+  top: 1.7px;
   left: 50%;
   transform: translateX(-50%);
+  user-select: none;
+  pointer-events: none;
 }
 
 input[type="range"] {
@@ -79,7 +81,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]::-moz-range-thumb {
-  -webkit-appearance: none;
+  -moz-appearance: none;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -113,7 +115,7 @@ input[type=range]::-webkit-slider-runnable-track  {
 }
 
 input[type=range]::-moz-range-track {
-  -webkit-appearance: none;
+  -moz-appearance: none;
   box-shadow: none;
   border: none;
   background: transparent;
